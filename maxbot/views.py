@@ -80,6 +80,7 @@ def send_message():
 
 
 def random_message(data):
+    global lastMessageTime
     like = choice([False, True], p=[0.85, 0.15])
     logging.info("Posting random message" if like else "Not posting message")
     if like and time() - lastMessageTime > int(os.getenv("MESSAGE_LIMIT")):

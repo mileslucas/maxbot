@@ -4,16 +4,16 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-pytest = "==3.3.2"
+pytest = "*"
 black = "*"
 
 [packages]
-gunicorn = "==19.7.1"
-parsedatetime = "==2.5"
-requests = "==2.18.4"
-Flask = "==0.12.2"
-Flask-SQLAlchemy = "==2.3.2"
+gunicorn = "*"
+parsedatetime = "*"
+requests = "*"
 numpy = "*"
+flask = "*"
+flask-sqlalchemy = "*"
 
 [requires]
 python_version = "3.7"
